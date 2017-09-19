@@ -20,7 +20,7 @@ const defaultState = {
   },
 }
 
-const todos_reducer = (state = defaultState, action) => {
+const todosReducer = (state = defaultState, action) => {
   Object.freeze(state);
 
   let nextState;
@@ -42,4 +42,4 @@ const todos_reducer = (state = defaultState, action) => {
   }
 }
 
-export default todos_reducer;
+export default todosReducer;
