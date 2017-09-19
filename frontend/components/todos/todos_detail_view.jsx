@@ -42,11 +42,13 @@ class TodosDetailView extends Component {
 
     return (
       <div>
-        <p>Body: {body}</p>
+        <p className='todo-body'>{body}</p>
         <p>Status: {status}</p>
-        <button onClick={this.handleDelete}>Delete</button>
-        <button onClick={this.toggleSteps}>{stepButtonText} Steps</button>
-        {showSteps}
+        <div className='todo-detail-buttons'>
+          <button onClick={this.handleDelete}>Delete</button>
+          <button onClick={this.toggleSteps}>{stepButtonText} Steps</button>
+          {showSteps}
+        </div>
       </div>
     )
   }

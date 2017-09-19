@@ -20,12 +20,14 @@ class TodosList extends Component {
     });
 
     return (
-      <div>
-        <h1>Todos</h1>
-        <ul>
-          {allTodos}
-        </ul>
-        <TodosForm receiveTodo={receiveTodo}/>
+      <div className='todo-list'>
+        <h1 className='header'>Todos</h1>
+        <div className='todo-list-with-form'>
+          <ul className='todo-items'>
+            {allTodos}
+          </ul>
+          <TodosForm receiveTodo={receiveTodo}/>
+        </div>
       </div>
     )
   }

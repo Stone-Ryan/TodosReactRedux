@@ -28,8 +28,8 @@ class StepListItem extends Component {
 
     return (
       <div>
-        <h5 id='step-title'>Title: {title}</h5>
-        <h5 id='step- body'>Body: {body}</h5>
+        <h5 id='step-title'>{title}</h5>
+        <h5 id='step-body'>{body}</h5>
         <h5>Status: {done ? 'Done' : 'Undone'}</h5>
         <div>
           <button onClick={this.toggleStep}>{done ? 'Undo' : 'Done'}</button>

@@ -38,6 +38,7 @@ class StepForm extends Component {
       <form className='step-form' onSubmit={this.handleSubmit}>
         <label>
           Title:
+        </label>
           <input
             className='title-input'
             ref='title'
@@ -45,9 +46,9 @@ class StepForm extends Component {
             placeholder='Title'
             onChange={this.update('title')}
             required></input>
-        </label>
         <label>
           Body:
+        </label>
           <input
             className='body-input'
             ref='body'
@@ -55,7 +56,6 @@ class StepForm extends Component {
             placeholder='Body'
             onChange={this.update('body')}
             required></input>
-        </label>
         <button className='create-button'>Create New Step</button>
       </form>
     )

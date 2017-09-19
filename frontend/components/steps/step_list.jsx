@@ -17,12 +17,14 @@ class StepList extends Component {
     });
 
     return (
-      <div>
-        <h4>Steps</h4>
-        <ul>
-          {allSteps}
-        </ul>
-          {<StepForm todoId={todoId} receiveStep={receiveStep}/>}
+      <div className='step-list-with-form'>
+        <div className='step-header-list'>
+          <h4 className= 'step-header'>Steps</h4>
+          <ul className='step-list'>
+            {allSteps}
+          </ul>
+        </div>
+        {<StepForm className='step-form' todoId={todoId} receiveStep={receiveStep}/>}
       </div>
     )
   }

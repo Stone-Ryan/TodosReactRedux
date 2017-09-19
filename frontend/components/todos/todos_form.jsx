@@ -36,6 +36,7 @@ class TodosForm extends Component {
       <form className='todo-form' onSubmit={this.handleSubmit}>
         <label>
           Title:
+        </label>
           <input
             className='title-input'
             ref='title'
@@ -43,9 +44,9 @@ class TodosForm extends Component {
             placeholder='Title'
             onChange={this.update('title')}
             required></input>
-        </label>
         <label>
           Body:
+        </label>
           <textarea
             className='body-input'
             ref='body'
@@ -54,7 +55,6 @@ class TodosForm extends Component {
             placeholder='Body'
             onChange={this.update('body')}
             required></textarea>
-        </label>
         <button className='create-button'>Create New Todo</button>
       </form>
     )
