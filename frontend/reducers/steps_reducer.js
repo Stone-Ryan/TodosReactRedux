@@ -8,14 +8,30 @@ const defaultState = {
     1: {
       id: 1,
       title: 'walk to store',
+      body: 'body1',
       done: false,
-      todo_id: 1
+      todoId: 1
     },
     2: {
       id: 2,
       title: 'buy soap',
+      body: 'body2',
       done: false,
-      todo_id: 1
+      todoId: 1
+    },
+    3: {
+      id: 3,
+      title: 'title',
+      body: 'body',
+      done: true,
+      todoId: 2
+    },
+    4: {
+      id: 4,
+      title: 'other title',
+      body: 'other body',
+      done: false,
+      todoId: 2
     }
   };
 
@@ -34,7 +50,7 @@ const stepsReducer = (state = defaultState, action) => {
       return newState;
     case REMOVE_STEP:
       newState = merge({}, state);
-      delete newState[step.id];
+      delete newState[action.step.id];
       return newState;
     default:
       return state;

@@ -20,7 +20,7 @@ const stepTest = {
   id: 3,
   title: 'run',
   done: false,
-  todo_id: 1
+  todoId: 1
 };
 
 document.addEventListener('DOMContentLoaded', () => {

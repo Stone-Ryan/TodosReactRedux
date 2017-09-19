@@ -39,8 +39,10 @@ class TodosListItem extends Component {
     return (
       <div>
         <h3 onClick={this.toggleShow} id='todo-title'>Title: {title}</h3>
-        <button onClick={this.toggleTodo}>{done ? 'Undo' : 'Done'}</button>
-        {detail}
+        <div>
+          {detail}
+          <button onClick={this.toggleTodo}>{done ? 'Undo' : 'Done'}</button>
+        </div>
       </div>
     )
 
